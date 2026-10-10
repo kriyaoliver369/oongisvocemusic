@@ -250,7 +250,7 @@
     .mobile-nav-link:hover { color: var(--gold-primary); }
 
     /* ==========================================================================
-       HERO SECTION (FIXED OVERLAP & MOBILE FRIENDLY)
+       HERO SECTION
        ========================================================================== */
     .hero {
       position: relative;
@@ -299,7 +299,6 @@
     }
     .stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
 
-    /* Visual composition without bad overlap */
     .hero-visual { width: 100%; }
     .hero-card-stack {
       position: relative;
@@ -330,7 +329,7 @@
       padding: 24px;
     }
 
-    /* Fixed SCSM floating box: safely responsive on all screen sizes */
+    /* SCSM Badge */
     .hero-floating-badge {
       position: absolute;
       bottom: -18px;
@@ -362,7 +361,7 @@
 
     /* ==========================================================================
        GRIDS (PILLARS, DISCIPLINES, PROGRAMS)
-       ========================================================================= */
+       ========================================================================== */
     .pillars-grid, .disciplines-grid, .programs-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -395,7 +394,9 @@
       border-radius: var(--radius-sm);
       background: rgba(212, 175, 55, 0.1);
       border: 1px solid var(--border-gold);
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: var(--gold-light);
       flex-shrink: 0;
     }
@@ -475,7 +476,7 @@
     .meta-row strong { color: var(--gold-champagne); }
 
     /* ==========================================================================
-       YOUTUBE EMBED VIDEO PLAYER SYSTEM
+       YOUTUBE EMBED VIDEO PLAYER SYSTEM + PLAYLIST HERO BANNER
        ========================================================================== */
     .yt-player-box {
       padding: 24px;
@@ -521,6 +522,55 @@
     }
     .yt-track-title { font-size: 0.82rem; font-weight: 600; color: #fff; }
     .yt-track-desc { font-size: 0.72rem; color: var(--text-muted); }
+
+    /* OPTION A: FEATURED PLAYLIST HANDOFF BANNER */
+    .yt-playlist-banner {
+      margin-top: 18px;
+      padding: 18px 22px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(18, 18, 24, 0.95) 100%);
+      border: 1px solid var(--gold-primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .yt-playlist-banner:hover {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(24, 24, 32, 0.98) 100%);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.18);
+    }
+    .playlist-banner-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .playlist-icon-disc {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      color: #0c0c0e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .playlist-banner-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #fff;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .playlist-banner-sub {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      display: block;
+    }
 
     /* Faculty Grid */
     .faculty-grid {
@@ -670,7 +720,7 @@
       .hero-title { font-size: 2.2rem; }
       .hero-main-card { height: 350px; }
       
-      /* Mobile Badge fix: flow naturally right beneath or firmly inside card */
+      /* Mobile Badge fix: flow naturally right beneath card without clipping */
       .hero-floating-badge {
         position: relative;
         bottom: auto; left: auto; right: auto;
@@ -685,6 +735,14 @@
       .faculty-photo { height: 260px; }
       .stats-strip { grid-template-columns: repeat(2, 1fr); }
       .contact-form-card, .studio-info-card { padding: 22px 18px; }
+
+      .yt-playlist-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .yt-playlist-banner .btn {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -750,7 +808,7 @@
   </aside>
 
   <!-- ========================================================================
-       HERO SECTION (IMAGE 1 OVERLAP FIXED + ACCURATE SCSM TEXT)
+       HERO SECTION (CORRECT SCSM TEXT & NO BAD OVERLAPS)
        ======================================================================== -->
   <main>
     <section id="home" class="hero">
@@ -795,7 +853,7 @@
           </div>
         </div>
 
-        <!-- Hero Visual (Image 1 Fixed) -->
+        <!-- Hero Visual Composition -->
         <div class="hero-visual">
           <div class="hero-card-stack">
             <div class="hero-main-card">
@@ -806,7 +864,7 @@
               </div>
             </div>
 
-            <!-- Fixed SCSM Badge -->
+            <!-- SCSM Badge -->
             <div class="hero-floating-badge">
               <div class="floating-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -867,7 +925,7 @@
     </section>
 
     <!-- ========================================================================
-         COACHING & SPECIALIZED PROGRAMS (EASY TO CHANGE PHOTOS)
+         COACHING & SPECIALIZED PROGRAMS
          ======================================================================== -->
     <section id="programs" class="section-padding">
       <div class="container">
@@ -887,7 +945,7 @@
         </div>
 
         <div class="programs-grid">
-          <!-- 1. OVEC (Replace image src with your photo) -->
+          <!-- 1. OVEC -->
           <div class="glass-panel program-card" data-category="choral">
             <span class="program-card-badge">Flagship 13-Week</span>
             <div class="program-card-img">
@@ -907,7 +965,7 @@
             </div>
           </div>
 
-          <!-- 2. SCSM Graded (Replace image src with your photo) -->
+          <!-- 2. SCSM Graded -->
           <div class="glass-panel program-card" data-category="certification vocal">
             <span class="program-card-badge">International Board</span>
             <div class="program-card-img">
@@ -927,7 +985,7 @@
             </div>
           </div>
 
-          <!-- 3. SCSM Diplomas (Replace image src with your photo) -->
+          <!-- 3. SCSM Diplomas -->
           <div class="glass-panel program-card" data-category="certification vocal">
             <span class="program-card-badge">Tertiary Diplomas</span>
             <div class="program-card-img">
@@ -947,7 +1005,7 @@
             </div>
           </div>
 
-          <!-- 4. TAKSIR Vokal (Replace image src with your photo) -->
+          <!-- 4. TAKSIR Vokal -->
           <div class="glass-panel program-card" data-category="vocal certification">
             <span class="program-card-badge">Vocal Benchmark</span>
             <div class="program-card-img">
@@ -967,7 +1025,7 @@
             </div>
           </div>
 
-          <!-- 5. The OV Singers Choir (Replace image src with your photo) -->
+          <!-- 5. The OV Singers Choir -->
           <div class="glass-panel program-card" data-category="choral">
             <span class="program-card-badge">Performing Choir</span>
             <div class="program-card-img">
@@ -987,7 +1045,7 @@
             </div>
           </div>
 
-          <!-- 6. 1-on-1 Masterclass (Replace image src with your photo) -->
+          <!-- 6. 1-on-1 Masterclass -->
           <div class="glass-panel program-card" data-category="vocal">
             <span class="program-card-badge">1-on-1 Masterclass</span>
             <div class="program-card-img">
@@ -1011,7 +1069,7 @@
     </section>
 
     <!-- ========================================================================
-         MEDIA & YOUTUBE VIDEO SHOWCASE PLAYER (REPLACED ABSTRACT AUDIO)
+         MEDIA & YOUTUBE VIDEO SHOWCASE PLAYER (OPTION A + APPROACH 1 INTEGRATED)
          ======================================================================== -->
     <section id="media" class="section-padding" style="background: rgba(14, 14, 18, 0.45);">
       <div class="container">
@@ -1023,7 +1081,7 @@
           </p>
         </div>
 
-        <!-- Responsive YouTube Video Showcase Player -->
+        <!-- YouTube Video Showcase Player -->
         <div class="yt-player-box">
           <div class="yt-iframe-wrap">
             <iframe id="youtubePlayer" 
@@ -1044,7 +1102,7 @@
             </a>
           </div>
 
-          <!-- Video Playlist Selectors (Put your actual YouTube Video IDs here) -->
+          <!-- Video Playlist Selectors (Replace data-videoid with your 11-char video IDs) -->
           <div class="yt-playlist-bar">
             <!-- Video 1 -->
             <div class="yt-playlist-item active" data-videoid="dQw4w9WgXcQ" data-title="Sabah Choral Suite (Live Kaamatan Showcase)">
@@ -1067,6 +1125,35 @@
               <span class="yt-track-desc">The OV Singers Sabah</span>
             </div>
           </div>
+
+          <!-- OPTION A (APPROACH 1): DEDICATED YOUTUBE PLAYLIST HERO BANNER -->
+          <!-- Replace YOUR_PLAYLIST_ID with the actual YouTube playlist ID (the string after list=) -->
+          <a href="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="yt-playlist-banner" 
+             aria-label="Explore Full YouTube Concert Playlist">
+            <div class="playlist-banner-left">
+              <div class="playlist-icon-disc">
+                <!-- Stacked Playlist SVG Icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="21" y1="15" x2="9" y2="15"></line>
+                  <line x1="21" y1="9" x2="9" y2="9"></line>
+                  <line x1="21" y1="3" x2="9" y2="3"></line>
+                  <line x1="21" y1="21" x2="9" y2="21"></line>
+                  <polygon points="3 8 7 12 3 16 3 8" fill="currentColor"></polygon>
+                </svg>
+              </div>
+              <div>
+                <span class="playlist-banner-title">Explore Full Concert Repertoire & Performances</span>
+                <span class="playlist-banner-sub">Official YouTube Playlist • The OV Singers & Oongisvoce Academy Archive</span>
+              </div>
+            </div>
+            <div class="btn btn-gold btn-sm" style="flex-shrink: 0; pointer-events: none;">
+              <span>Open YouTube Playlist ↗</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
@@ -1126,7 +1213,7 @@
     </section>
 
     <!-- ========================================================================
-         CONTACT & ENROLLMENT (DISPATCHES DIRECTLY VIA WHATSAPP & FORMS)
+         CONTACT & ENROLLMENT (DISPATCHES DIRECTLY VIA WHATSAPP)
          ======================================================================== -->
     <section id="contact" class="section-padding" style="background: rgba(14, 14, 18, 0.45);">
       <div class="container">
@@ -1142,7 +1229,7 @@
           <!-- Form -->
           <div class="glass-panel contact-form-card">
             <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Enrollment Consultation</h3>
-            <p style="font-size: 0.88rem; margin-bottom: 22px;">Fill in your details below. Your submission can automatically route to WhatsApp or your inbox.</p>
+            <p style="font-size: 0.88rem; margin-bottom: 22px;">Fill in your details below. Your submission routes straight to admissions via WhatsApp.</p>
 
             <form id="contactForm">
               <div class="form-group-grid">
@@ -1573,7 +1660,7 @@
         });
       }
 
-      // 5. Contact Form WhatsApp Instant Redirection
+      // 5. Contact Form WhatsApp Redirection
       const form = document.getElementById('contactForm');
       if (form) {
         form.addEventListener('submit', (e) => {
@@ -1594,7 +1681,6 @@
             (msg ? `• Message: ${msg}\n` : '')
           );
 
-          // Redirect to WhatsApp directly
           window.open(`https://wa.me/60168388726?text=${text}`, '_blank');
           form.reset();
         });
