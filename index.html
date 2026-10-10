@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Oongisvoce Academy of Music | Vocal Pedagogy, Choral Arts & SCSM Certification | Sabah</title>
+  <meta name="description" content="Established in 2014 in Donggongon, Penampang, Sabah. Oongisvoce Academy of Music is the premier academy for vocal mastery, The OV Singers, and St. Cecilia School of Music (Australia) certification.">
+  <meta name="author" content="Oongisvoce Academy of Music">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oongisvocemusic.com/">
+  <meta property="og:title" content="Oongisvoce Academy of Music | Cultivating Vocal Mastery & Artistic Distinction">
+  <meta property="og:description" content="Sabah's premier vocal institute, choral center, and St. Cecilia School of Music (Australia) partner center in Penampang.">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0a0a0d;
+      --bg-surface: #121217;
+      --bg-card: rgba(22, 22, 29, 0.85);
+      --gold-primary: #d4af37;
+      --gold-light: #f7e7a9;
+      --gold-champagne: #faebd7;
+      --gold-gradient: linear-gradient(135deg, #f7e7a9 0%, #d4af37 55%, #997424 100%);
+      --text-main: #f4f4f6;
+      --text-secondary: #a7a7b8;
+      --text-muted: #727284;
+      --border-gold: rgba(212, 175, 55, 0.25);
+      --border-gold-hover: rgba(212, 175, 55, 0.65);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-lux: 0 16px 40px rgba(0, 0, 0, 0.7);
+      --transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    h1, h2, h3, .brand-name {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.03em;
+      font-weight: 700;
+    }
+    p { color: var(--text-secondary); margin-bottom: 1rem; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .text-gold-gradient {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gold { color: var(--gold-light); text-decoration: none; font-weight: 500; }
+
+    /* Glass Panels */
+    .glass-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: var(--shadow-lux);
+      transition: var(--transition);
+    }
+    .glass-panel:hover {
+      border-color: var(--border-gold-hover);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 13px 24px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      text-align: center;
+    }
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #0c0c0e;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.35);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.5);
+    }
+    .btn-outline-gold {
+      background: transparent;
+      border-color: var(--gold-primary);
+      color: var(--gold-light);
+    }
+    .btn-outline-gold:hover {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: var(--gold-light);
+    }
+    .btn-sm { padding: 9px 18px; font-size: 0.78rem; }
+
+    /* Sections */
+    .section-padding { padding: 80px 0; }
+    .section-header { text-align: center; max-width: 760px; margin: 0 auto 45px auto; }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--gold-primary);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .section-title { font-size: 2.2rem; margin-bottom: 14px; line-height: 1.25; }
+    .section-subtitle { font-size: 0.98rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(10, 10, 13, 0.9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+      transition: var(--transition);
+    }
+    .site-header.scrolled {
+      background: rgba(8, 8, 10, 0.98);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.85);
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-crest {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.28) 0%, rgba(17, 17, 22, 0.95) 80%);
+      border: 1px solid var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+    .brand-name { font-size: 1.1rem; color: #fff; line-height: 1.1; }
+    .brand-subtitle {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      color: var(--gold-primary);
+      margin-top: 3px;
+    }
+    .nav-menu { display: flex; align-items: center; gap: 28px; }
+    .nav-link {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .nav-link:hover, .nav-link.active { color: var(--gold-light); }
+    .nav-actions { display: flex; align-items: center; gap: 14px; }
+    
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      padding: 6px;
+    }
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--gold-light);
+    }
+
+    /* Mobile Drawer */
+    .drawer-backdrop {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 1050;
+      opacity: 0; pointer-events: none;
+      transition: var(--transition);
+    }
+    .drawer-backdrop.active { opacity: 1; pointer-events: auto; }
+    .mobile-drawer {
+      position: fixed;
+      top: 0; bottom: 0; right: -300px;
+      width: 280px;
+      background: var(--bg-surface);
+      border-left: 1px solid var(--border-gold);
+      z-index: 1100;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+    .mobile-drawer.open { right: 0; }
+    .mobile-nav-links { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+    .mobile-nav-link {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .mobile-nav-link:hover { color: var(--gold-primary); }
+
+    /* ==========================================================================
+       HERO SECTION (FIXED OVERLAP & MOBILE FRIENDLY)
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 90px;
+      padding-bottom: 40px;
+      background: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-gold);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.78rem;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+    .hero-title { font-size: 2.85rem; line-height: 1.2; margin-bottom: 18px; }
+    .hero-desc { font-size: 1rem; color: var(--text-secondary); margin-bottom: 30px; line-height: 1.75; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
+
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      padding-top: 24px;
+    }
+    .stat-num {
+      display: block;
+      font-family: 'Cinzel', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+    .stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* Visual composition without bad overlap */
+    .hero-visual { width: 100%; }
+    .hero-card-stack {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-main-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-gold);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+      height: 420px;
+    }
+    .hero-main-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.88);
+    }
+    .hero-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 10, 13, 0.95) 15%, transparent 70%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+    }
+
+    /* Fixed SCSM floating box: safely responsive on all screen sizes */
+    .hero-floating-badge {
+      position: absolute;
+      bottom: -18px;
+      left: 16px;
+      right: 16px;
+      background: rgba(17, 17, 23, 0.95);
+      border: 1px solid var(--gold-primary);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-lux);
+      z-index: 5;
+    }
+    .floating-icon {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      color: #0c0c0e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .floating-title { font-weight: 700; color: #fff; font-size: 0.9rem; display: block; }
+    .floating-sub { font-size: 0.78rem; color: var(--gold-light); display: block; }
+
+    /* ==========================================================================
+       GRIDS (PILLARS, DISCIPLINES, PROGRAMS)
+       ========================================================================= */
+    .pillars-grid, .disciplines-grid, .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .pillar-card { padding: 30px 24px; }
+    .pillar-icon {
+      width: 52px; height: 52px;
+      border-radius: var(--radius-sm);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .pillar-title { font-size: 1.18rem; margin-bottom: 10px; color: #fff; }
+    .pillar-desc { font-size: 0.9rem; line-height: 1.65; margin-bottom: 0; }
+
+    .discipline-card {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .discipline-header { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .discipline-icon-box {
+      width: 42px; height: 42px;
+      border-radius: var(--radius-sm);
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-gold);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold-light);
+      flex-shrink: 0;
+    }
+    .discipline-name { font-size: 1.1rem; color: #fff; }
+    .discipline-desc { font-size: 0.88rem; line-height: 1.6; flex-grow: 1; }
+    .discipline-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 14px; margin-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.78rem; color: var(--text-muted);
+    }
+
+    /* Program Cards */
+    .program-filters {
+      display: flex; justify-content: center; gap: 10px;
+      margin-bottom: 35px; flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      color: var(--text-secondary);
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--gold-gradient);
+      color: #0c0c0e;
+      border-color: var(--gold-primary);
+      font-weight: 600;
+    }
+
+    .program-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .program-card-badge {
+      position: absolute;
+      top: 14px; right: 14px;
+      background: rgba(10, 10, 13, 0.9);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-light);
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      z-index: 2;
+    }
+    .program-card-img { height: 200px; width: 100%; overflow: hidden; background: #1a1a24; }
+    .program-card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .program-card:hover .program-card-img img { transform: scale(1.05); }
+    .program-card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .program-title { font-size: 1.12rem; margin-bottom: 10px; color: #fff; }
+    .program-snippet { font-size: 0.86rem; line-height: 1.6; margin-bottom: 16px; flex-grow: 1; }
+    .program-meta-list {
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      font-size: 0.78rem;
+    }
+    .meta-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+    .meta-row:last-child { margin-bottom: 0; }
+    .meta-row span { color: var(--text-muted); }
+    .meta-row strong { color: var(--gold-champagne); }
+
+    /* ==========================================================================
+       YOUTUBE EMBED VIDEO PLAYER SYSTEM
+       ========================================================================== */
+    .yt-player-box {
+      padding: 24px;
+      background: #0e0e13;
+      border: 1px solid var(--gold-primary);
+      border-radius: var(--radius-md);
+      margin-bottom: 45px;
+    }
+    .yt-iframe-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: #000;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .yt-iframe-wrap iframe {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      border: none;
+    }
+    .yt-playlist-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .yt-playlist-item {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .yt-playlist-item:hover, .yt-playlist-item.active {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: var(--gold-primary);
+    }
+    .yt-track-title { font-size: 0.82rem; font-weight: 600; color: #fff; }
+    .yt-track-desc { font-size: 0.72rem; color: var(--text-muted); }
+
+    /* Faculty Grid */
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      margin-top: 40px;
+    }
+    .faculty-card {
+      display: grid;
+      grid-template-columns: 0.4fr 0.6fr;
+      overflow: hidden;
+    }
+    .faculty-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .faculty-info { padding: 24px; display: flex; flex-direction: column; justify-content: center; }
+    .faculty-role { font-size: 0.74rem; text-transform: uppercase; color: var(--gold-primary); letter-spacing: 0.14em; }
+    .faculty-name { font-size: 1.35rem; color: #fff; margin: 4px 0 10px 0; }
+    .faculty-credentials { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .credential-pill {
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .faculty-bio { font-size: 0.85rem; line-height: 1.6; margin-bottom: 0; }
+
+    /* Form & Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+    }
+    .contact-form-card, .studio-info-card { padding: 32px; }
+    .form-group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-label { display: block; font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 6px; font-weight: 500; }
+    .form-control {
+      width: 100%;
+      background: rgba(10, 10, 14, 0.85);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.88rem;
+      outline: none;
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    }
+    textarea.form-control { min-height: 110px; resize: vertical; }
+
+    .info-item { display: flex; gap: 14px; margin-bottom: 20px; }
+    .info-icon {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-gold);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold-primary);
+      flex-shrink: 0;
+    }
+    .info-details h5 { font-size: 0.92rem; color: #fff; margin-bottom: 3px; }
+    .info-details p { font-size: 0.84rem; margin-bottom: 0; line-height: 1.55; }
+    .info-details a { color: var(--gold-light); text-decoration: none; }
+
+    .whatsapp-card {
+      background: rgba(37, 211, 102, 0.08);
+      border: 1px solid rgba(78, 250, 144, 0.35);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #070709;
+      border-top: 1px solid var(--border-gold);
+      padding: 60px 0 30px 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.8fr 0.8fr 1fr;
+      gap: 30px;
+      margin-bottom: 45px;
+    }
+    .footer-heading {
+      font-size: 0.9rem;
+      color: var(--gold-light);
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-link { color: var(--text-secondary); text-decoration: none; font-size: 0.84rem; }
+    .footer-link:hover { color: var(--gold-primary); }
+
+    /* Modals & Dialogs */
+    .modal-backdrop {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 2000;
+      display: none;
+      align-items: center; justify-content: center;
+      padding: 16px;
+      backdrop-filter: blur(8px);
+    }
+    .modal-backdrop.active { display: flex; }
+    .modal-dialog {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      max-width: 640px; width: 100%;
+      padding: 30px;
+      position: relative;
+      max-height: 88vh;
+      overflow-y: auto;
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 18px; right: 18px;
+      background: none; border: none;
+      color: var(--text-muted);
+      font-size: 1.6rem; cursor: pointer;
+    }
+
+    /* ==========================================================================
+       MOBILE RESPONSIVENESS OVERRIDES
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid, .faculty-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+      .pillars-grid, .disciplines-grid, .programs-grid { grid-template-columns: repeat(2, 1fr); }
+      .yt-playlist-bar { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu, .nav-actions .btn { display: none; }
+      .mobile-toggle { display: flex; }
+      .hero { padding-top: 86px; min-height: auto; }
+      .hero-title { font-size: 2.2rem; }
+      .hero-main-card { height: 350px; }
+      
+      /* Mobile Badge fix: flow naturally right beneath or firmly inside card */
+      .hero-floating-badge {
+        position: relative;
+        bottom: auto; left: auto; right: auto;
+        margin-top: 14px;
+        width: 100%;
+      }
+
+      .pillars-grid, .disciplines-grid, .programs-grid, .form-group-grid, .yt-playlist-bar {
+        grid-template-columns: 1fr;
+      }
+      .faculty-card { grid-template-columns: 1fr; }
+      .faculty-photo { height: 260px; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .contact-form-card, .studio-info-card { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand" aria-label="Oongisvoce Academy of Music">
+        <div class="brand-crest">OV</div>
+        <div class="brand-text">
+          <span class="brand-name">OONGISVOCE</span>
+          <span class="brand-subtitle">ACADEMY OF MUSIC • SABAH</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#programs" class="nav-link">Coaching & Programs</a>
+        <a href="#media" class="nav-link">Media & Previews</a>
+        <a href="#contact" class="nav-link">Enrollment</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-gold btn-sm">
+          <span>Enroll Now</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="brand">
+          <div class="brand-crest" style="width: 36px; height: 36px; font-size: 1rem;">OV</div>
+          <span class="brand-name" style="font-size: 1rem;">OONGISVOCE</span>
+        </div>
+        <button class="modal-close-btn" id="drawerCloseBtn" style="position: static;">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link active">Home <span>→</span></a>
+        <a href="#about" class="mobile-nav-link">About <span>→</span></a>
+        <a href="#programs" class="mobile-nav-link">Coaching & Programs <span>→</span></a>
+        <a href="#media" class="mobile-nav-link">Media & Previews <span>→</span></a>
+        <a href="#contact" class="mobile-nav-link">Enrollment <span>→</span></a>
+      </nav>
+    </div>
+    <div>
+      <a href="#contact" class="btn btn-gold" style="width: 100%;">Enroll Now</a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 14px;">
+        Donggongon Point, Penampang, Sabah
+      </p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SECTION (IMAGE 1 OVERLAP FIXED + ACCURATE SCSM TEXT)
+       ======================================================================== -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>✨</span>
+            <span>Premier Vocal & Choral Academy in Sabah</span>
+          </div>
+          <h1 class="hero-title">
+            Cultivating <span class="text-gold-gradient">Vocal Mastery</span> & Artistic Distinction
+          </h1>
+          <p class="hero-desc">
+            Established in 2014 in Donggongon, Penampang, Oongisvoce Academy of Music provides world-class vocal coaching, choral leadership through The OV Singers, and international qualifications under the St. Cecilia School of Music (SCSM Australia).
+          </p>
+          <div class="hero-btns">
+            <a href="#programs" class="btn btn-gold">
+              <span>Explore Programs</span>
+            </a>
+            <a href="#media" class="btn btn-outline-gold">
+              <span>Watch Video Previews</span>
+            </a>
+          </div>
+
+          <div class="stats-strip">
+            <div class="stat-item">
+              <span class="stat-num">1,200+</span>
+              <span class="stat-label">Learners Certified</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Exam Pass Rate</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">G1–Dip</span>
+              <span class="stat-label">SCSM Examination Scope</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual (Image 1 Fixed) -->
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="hero-main-card">
+              <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop&q=80" alt="The OV Singers & Faculty">
+              <div class="hero-card-overlay">
+                <h4 style="color: #fff; font-size: 1.25rem;">The OV Singers & Faculty</h4>
+                <p style="color: var(--gold-light); font-size: 0.85rem; margin-bottom: 0;">Harmonizing Sabahan Cultural Heritage & Bel Canto Technique</p>
+              </div>
+            </div>
+
+            <!-- Fixed SCSM Badge -->
+            <div class="hero-floating-badge">
+              <div class="floating-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="floating-text">
+                <span class="floating-title">SCSM Official Partner Center</span>
+                <span class="floating-sub">Australia Top Music Exam Board</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Pillars -->
+    <section class="section-padding" style="background: rgba(14, 14, 18, 0.6);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Academic & Choral Standards</div>
+          <h2 class="section-title">The Foundation of <span class="text-gold-gradient">Musical Excellence</span></h2>
+          <p class="section-subtitle">
+            We merge rigorous vocal science with stage presentation, preparing musicians from foundational breath work to international concert diplomas.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="glass-panel pillar-card">
+            <div class="pillar-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="pillar-title">International SCSM Accreditation</h3>
+            <p class="pillar-desc">
+              Official examination partner in Sabah for the St. Cecilia School of Music (Australia). Accredited graded tracks from Grade 1 through Associate, Licentiate, and Fellowship Diplomas.
+            </p>
+          </div>
+
+          <div class="glass-panel pillar-card">
+            <div class="pillar-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="pillar-title">Pedagogical Vocal Science</h3>
+            <p class="pillar-desc">
+              Directed by Fellow Carrey Oliver, instruction focuses on appoggio breathing mechanics, vowel acoustic resonance, vocal break smoothing, and polyphonic choral blend.
+            </p>
+          </div>
+
+          <div class="glass-panel pillar-card">
+            <div class="pillar-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+            </div>
+            <h3 class="pillar-title">Stage & Performance Arena</h3>
+            <p class="pillar-desc">
+              Home to The OV Singers, our celebrated community ensemble performing at the Sabah State Harvest Festival (Pesta Kaamatan), regional choral symphonies, and state functions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         COACHING & SPECIALIZED PROGRAMS (EASY TO CHANGE PHOTOS)
+         ======================================================================== -->
+    <section id="programs" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Curriculum & Certification</div>
+          <h2 class="section-title">Coaching & <span class="text-gold-gradient">Specialized Programs</span></h2>
+          <p class="section-subtitle">
+            Structured musical pathways ranging from accelerated ensemble performance to internationally recognized tertiary diplomas.
+          </p>
+        </div>
+
+        <div class="program-filters">
+          <button class="filter-btn active" data-filter="all">All Programs</button>
+          <button class="filter-btn" data-filter="choral">Choral & Ensemble</button>
+          <button class="filter-btn" data-filter="vocal">Vocal Solo & Masterclass</button>
+          <button class="filter-btn" data-filter="certification">SCSM Exams & Diplomas</button>
+        </div>
+
+        <div class="programs-grid">
+          <!-- 1. OVEC (Replace image src with your photo) -->
+          <div class="glass-panel program-card" data-category="choral">
+            <span class="program-card-badge">Flagship 13-Week</span>
+            <div class="program-card-img">
+              <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&auto=format&fit=crop&q=80" alt="OVEC Choral Training">
+            </div>
+            <div class="program-card-body">
+              <h3 class="program-title">The OV Essential Choral (OVEC) Program</h3>
+              <p class="program-snippet">
+                Structured 13-week choral acceleration covering diaphragmatic breath mechanics, IPA vowel articulation, solfège, polyphony, and recital concert preparation.
+              </p>
+              <div class="program-meta-list">
+                <div class="meta-row"><span>Duration:</span><strong>13 Weeks</strong></div>
+                <div class="meta-row"><span>Director:</span><strong>Carrey Oliver (FSCSM)</strong></div>
+                <div class="meta-row"><span>Certification:</span><strong>Oongisvoce + SCSM Recital</strong></div>
+              </div>
+              <button class="btn btn-gold btn-sm open-program-modal" data-program="ovec">View Syllabus →</button>
+            </div>
+          </div>
+
+          <!-- 2. SCSM Graded (Replace image src with your photo) -->
+          <div class="glass-panel program-card" data-category="certification vocal">
+            <span class="program-card-badge">International Board</span>
+            <div class="program-card-img">
+              <img src="https://images.unsplash.com/photo-1520523839898-50712743e9a7?w=600&auto=format&fit=crop&q=80" alt="SCSM Graded Exams">
+            </div>
+            <div class="program-card-body">
+              <h3 class="program-title">SCSM Graded Exams (Grades 1–8)</h3>
+              <p class="program-snippet">
+                Progressive certified examinations under the St. Cecilia School of Music (Australia). Available for Vocal, Piano, Guitar, Strings, and Theory with diagnostic mock clinics.
+              </p>
+              <div class="program-meta-list">
+                <div class="meta-row"><span>Level:</span><strong>Grade 1 through Grade 8</strong></div>
+                <div class="meta-row"><span>Board:</span><strong>SCSM Australia</strong></div>
+                <div class="meta-row"><span>Pass Rate:</span><strong>100% Proven Record</strong></div>
+              </div>
+              <button class="btn btn-gold btn-sm open-program-modal" data-program="scsm-graded">View Syllabus →</button>
+            </div>
+          </div>
+
+          <!-- 3. SCSM Diplomas (Replace image src with your photo) -->
+          <div class="glass-panel program-card" data-category="certification vocal">
+            <span class="program-card-badge">Tertiary Diplomas</span>
+            <div class="program-card-img">
+              <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&auto=format&fit=crop&q=80" alt="SCSM Diplomas">
+            </div>
+            <div class="program-card-body">
+              <h3 class="program-title">SCSM Professional Diplomas</h3>
+              <p class="program-snippet">
+                Concert recital and teaching diplomas recognized globally (DipSCSM, LSCSM, FSCSM). Mentored covering 45-60 min repertoire recitals, program notes, and viva voce defense.
+              </p>
+              <div class="program-meta-list">
+                <div class="meta-row"><span>Level:</span><strong>Associate, Licentiate, Fellow</strong></div>
+                <div class="meta-row"><span>Prerequisite:</span><strong>Grade 8 or Equivalent</strong></div>
+                <div class="meta-row"><span>Format:</span><strong>Recital + Viva Voce</strong></div>
+              </div>
+              <button class="btn btn-gold btn-sm open-program-modal" data-program="scsm-diploma">View Syllabus →</button>
+            </div>
+          </div>
+
+          <!-- 4. TAKSIR Vokal (Replace image src with your photo) -->
+          <div class="glass-panel program-card" data-category="vocal certification">
+            <span class="program-card-badge">Vocal Benchmark</span>
+            <div class="program-card-img">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&auto=format&fit=crop&q=80" alt="TAKSIR Vokal">
+            </div>
+            <div class="program-card-body">
+              <h3 class="program-title">Program TAKSIR / Tokoh Vokal</h3>
+              <p class="program-snippet">
+                Standardized singing assessment and adjudication methodology. Equips singers and adjudicators with objective scoring matrices, register balancing, and acoustic health.
+              </p>
+              <div class="program-meta-list">
+                <div class="meta-row"><span>Focus:</span><strong>Adjudication & Diagnostics</strong></div>
+                <div class="meta-row"><span>Target:</span><strong>Contestants & Adjudicators</strong></div>
+                <div class="meta-row"><span>Duration:</span><strong>6 to 8 Weeks Intensive</strong></div>
+              </div>
+              <button class="btn btn-gold btn-sm open-program-modal" data-program="taksir-vokal">View Syllabus →</button>
+            </div>
+          </div>
+
+          <!-- 5. The OV Singers Choir (Replace image src with your photo) -->
+          <div class="glass-panel program-card" data-category="choral">
+            <span class="program-card-badge">Performing Choir</span>
+            <div class="program-card-img">
+              <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=600&auto=format&fit=crop&q=80" alt="The OV Singers">
+            </div>
+            <div class="program-card-body">
+              <h3 class="program-title">The OV Singers Performing Choir</h3>
+              <p class="program-snippet">
+                Sabah's premier community choir (ages 15–50). Rehearses rich Sabahan indigenous choral harmonies, polyphonic sacred literature, and contemporary stage arrangements.
+              </p>
+              <div class="program-meta-list">
+                <div class="meta-row"><span>Audition:</span><strong>Seasonal Intake</strong></div>
+                <div class="meta-row"><span>Ages:</span><strong>15 to 50 Years</strong></div>
+                <div class="meta-row"><span>Stages:</span><strong>State & International</strong></div>
+              </div>
+              <button class="btn btn-gold btn-sm open-program-modal" data-program="ov-singers">View Details →</button>
+            </div>
+          </div>
+
+          <!-- 6. 1-on-1 Masterclass (Replace image src with your photo) -->
+          <div class="glass-panel program-card" data-category="vocal">
+            <span class="program-card-badge">1-on-1 Masterclass</span>
+            <div class="program-card-img">
+              <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80" alt="Private Vocal Masterclass">
+            </div>
+            <div class="program-card-body">
+              <h3 class="program-title">Private Vocal Artistry Masterclass</h3>
+              <p class="program-snippet">
+                Individualized vocal diagnostics to develop natural resonance, expand vocal range, smooth register breaks, and build lasting vocal health.
+              </p>
+              <div class="program-meta-list">
+                <div class="meta-row"><span>Schedule:</span><strong>Weekly 45 / 60 Mins</strong></div>
+                <div class="meta-row"><span>Mode:</span><strong>In-Studio or Hybrid Online</strong></div>
+                <div class="meta-row"><span>Target:</span><strong>Beginner to Concert Level</strong></div>
+              </div>
+              <button class="btn btn-gold btn-sm open-program-modal" data-program="private-vocal">View Syllabus →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         MEDIA & YOUTUBE VIDEO SHOWCASE PLAYER (REPLACED ABSTRACT AUDIO)
+         ======================================================================== -->
+    <section id="media" class="section-padding" style="background: rgba(14, 14, 18, 0.45);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Performances & Broadcasts</div>
+          <h2 class="section-title">Video Previews & <span class="text-gold-gradient">Concert Moments</span></h2>
+          <p class="section-subtitle">
+            Watch live recordings from The OV Singers, our choral festivals, and student masterclass recitals.
+          </p>
+        </div>
+
+        <!-- Responsive YouTube Video Showcase Player -->
+        <div class="yt-player-box">
+          <div class="yt-iframe-wrap">
+            <iframe id="youtubePlayer" 
+                    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&enablejsapi=1" 
+                    title="Oongisvoce Video Preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+
+          <div style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="section-tag" style="margin-bottom: 2px;">Selected Performance</span>
+              <h3 id="currentVideoTitle" style="font-size: 1.25rem; color: #fff;">Sabah Choral Suite (Live Kaamatan Showcase)</h3>
+            </div>
+            <a id="watchOnYoutubeBtn" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm">
+              Watch on YouTube ↗
+            </a>
+          </div>
+
+          <!-- Video Playlist Selectors (Put your actual YouTube Video IDs here) -->
+          <div class="yt-playlist-bar">
+            <!-- Video 1 -->
+            <div class="yt-playlist-item active" data-videoid="dQw4w9WgXcQ" data-title="Sabah Choral Suite (Live Kaamatan Showcase)">
+              <span class="yt-track-title">1. Sabah Choral Suite</span>
+              <span class="yt-track-desc">The OV Singers • Live Ensemble</span>
+            </div>
+            <!-- Video 2 -->
+            <div class="yt-playlist-item" data-videoid="L_LUpnjgPso" data-title="Ave Verum Corpus (Chamber Choral Series)">
+              <span class="yt-track-title">2. Ave Verum Corpus</span>
+              <span class="yt-track-desc">OV Chamber Choir</span>
+            </div>
+            <!-- Video 3 -->
+            <div class="yt-playlist-item" data-videoid="kJQP7kiw5Fk" data-title="Classical Bel Canto Recital Repertoire">
+              <span class="yt-track-title">3. Bel Canto Recital Aria</span>
+              <span class="yt-track-desc">SCSM Licentiate Candidate</span>
+            </div>
+            <!-- Video 4 -->
+            <div class="yt-playlist-item" data-videoid="fJ9rUzIMcZQ" data-title="Kaamatan Cultural Choral Arrangement">
+              <span class="yt-track-title">4. Jambatan Doa Harmonies</span>
+              <span class="yt-track-desc">The OV Singers Sabah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT SECTION & FACULTY
+         ======================================================================== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Academy Heritage</div>
+          <h2 class="section-title">A Decade of <span class="text-gold-gradient">Musical Legacy</span></h2>
+          <p class="section-subtitle">
+            Founded in 2014 at Donggongon Point, Penampang, Oongisvoce Academy of Music was built to elevate choral and vocal education to international pedagogical standards.
+          </p>
+        </div>
+
+        <div class="faculty-grid">
+          <!-- Carrey Oliver -->
+          <div class="glass-panel faculty-card">
+            <div class="faculty-photo">
+              <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&auto=format&fit=crop&q=80" alt="Carrey Oliver">
+            </div>
+            <div class="faculty-info">
+              <span class="faculty-role">Artistic Director & Conductor</span>
+              <h3 class="faculty-name">Carrey Oliver</h3>
+              <div class="faculty-credentials">
+                <span class="credential-pill">FSCSM (Fellow)</span>
+                <span class="credential-pill">FASMC (Fellow)</span>
+                <span class="credential-pill">SCSM Malaysia Coordinator</span>
+              </div>
+              <p class="faculty-bio">
+                Fellow of the St. Cecilia School of Music (Australia) and Australian Society of Musicology & Composition. Founder of The OV Singers, vocal pedagogue, choir adjudicator, and designer of the 13-week OVEC curriculum.
+              </p>
+            </div>
+          </div>
+
+          <!-- Elton Ciddy Yali -->
+          <div class="glass-panel faculty-card">
+            <div class="faculty-photo">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80" alt="Elton Ciddy Yali">
+            </div>
+            <div class="faculty-info">
+              <span class="faculty-role">Principal</span>
+              <h3 class="faculty-name">Elton Ciddy Yali</h3>
+              <div class="faculty-credentials">
+                <span class="credential-pill">Educational Leadership</span>
+                <span class="credential-pill">Senior Music Consultant</span>
+              </div>
+              <p class="faculty-bio">
+                Principal of Oongisvoce Academy of Music. Directs academic operations, curriculum standard compliance, candidate registrations, and student advancement pathways across Sabah and East Malaysia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT & ENROLLMENT (DISPATCHES DIRECTLY VIA WHATSAPP & FORMS)
+         ======================================================================== -->
+    <section id="contact" class="section-padding" style="background: rgba(14, 14, 18, 0.45);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Enrollment & Inquiries</div>
+          <h2 class="section-title">Begin Your <span class="text-gold-gradient">Musical Journey</span></h2>
+          <p class="section-subtitle">
+            Let us know your musical goals. Submit the form below to initiate an enrollment consultation.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Form -->
+          <div class="glass-panel contact-form-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Enrollment Consultation</h3>
+            <p style="font-size: 0.88rem; margin-bottom: 22px;">Fill in your details below. Your submission can automatically route to WhatsApp or your inbox.</p>
+
+            <form id="contactForm">
+              <div class="form-group-grid">
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Full Name *</label>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Rachel Bryan" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Contact No. / WhatsApp *</label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. +60 16 838 8726" required>
+                </div>
+              </div>
+
+              <div class="form-group-grid">
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="e.g. name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactProgram">Program of Interest *</label>
+                  <select id="contactProgram" class="form-control">
+                    <option value="The OV Essential Choral (OVEC) Program (13-Week)">The OV Essential Choral (OVEC) Program (13-Week)</option>
+                    <option value="SCSM Graded Exams (Grades 1–8)">SCSM Graded Exams (Grades 1–8)</option>
+                    <option value="SCSM Professional Diplomas (DipSCSM, LSCSM, FSCSM)">SCSM Professional Diplomas (DipSCSM, LSCSM, FSCSM)</option>
+                    <option value="Program TAKSIR / Persijilan Tokoh Vokal">Program TAKSIR / Persijilan Tokoh Vokal</option>
+                    <option value="The OV Singers Choir Audition">The OV Singers Choir Audition</option>
+                    <option value="Private Vocal Coaching (1-on-1)">Private Vocal Coaching (1-on-1)</option>
+                    <option value="Piano & Modern Keyboard">Piano & Modern Keyboard</option>
+                    <option value="Guitar & Strings">Guitar & Strings</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Musical Aspiration / Message</label>
+                <textarea id="contactMessage" class="form-control" placeholder="Describe your experience level or target examination timelines..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%;">
+                <span>Submit & Send via WhatsApp</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Studio Info -->
+          <div class="glass-panel studio-info-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Studio Location & Contact</h3>
+            <p style="font-size: 0.88rem; margin-bottom: 22px;">Reach our admissions and faculty coordinators directly.</p>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="info-details">
+                <h5>Academy Address</h5>
+                <p>
+                  Lot 6/7, 2nd Floor, Donggongon Point,<br>
+                  89500 Penampang, Sabah, Malaysia.
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="info-details">
+                <h5>Direct Email</h5>
+                <p>
+                  <a href="mailto:admin@oongisvocemusic.com">admin@oongisvocemusic.com</a><br>
+                  <a href="mailto:oongisvoce@gmail.com">oongisvoce@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="info-details">
+                <h5>Consultation Hours</h5>
+                <p>
+                  Mon – Sat: 9:00 AM – 7:30 PM<br>
+                  Sun: By appointment for choir rehearsals
+                </p>
+              </div>
+            </div>
+
+            <div class="whatsapp-card">
+              <div>
+                <h5 style="color: #4efa90; margin-bottom: 2px;">Chat on WhatsApp</h5>
+                <p style="font-size: 0.76rem; color: var(--text-secondary); margin-bottom: 0;">Instant inquiries with our admissions team</p>
+              </div>
+              <a href="https://wa.me/60168388726?text=Hello%20Oongisvoce%20Academy%20of%20Music,%20I%20would%20like%20to%20inquire%20about%20music%20lessons%20and%20enrollment." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm" style="background: #25D366; color: #fff;">
+                Chat Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom: 14px;">
+            <div class="brand-crest">OV</div>
+            <div class="brand-text">
+              <span class="brand-name">OONGISVOCE</span>
+              <span class="brand-subtitle">ACADEMY OF MUSIC • SABAH</span>
+            </div>
+          </div>
+          <p style="font-size: 0.84rem; line-height: 1.65;">
+            Since 2014, our teaching consultants have guided more than 1,200 artistic learners through their international music examinations from Grade 1 to Grade 8, and Diploma conferments.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home Overview</a></li>
+            <li><a href="#about" class="footer-link">About Academy</a></li>
+            <li><a href="#programs" class="footer-link">SCSM Certification</a></li>
+            <li><a href="#programs" class="footer-link">OVEC Choral Program</a></li>
+            <li><a href="#contact" class="footer-link">Enrollment & Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="#programs" class="footer-link">Vocal Pedagogy</a></li>
+            <li><a href="#programs" class="footer-link">Piano & Keyboard</a></li>
+            <li><a href="#programs" class="footer-link">Choral Ensemble</a></li>
+            <li><a href="#programs" class="footer-link">TAKSIR Vokal</a></li>
+            <li><a href="#programs" class="footer-link">SCSM Diplomas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Studio Location</h4>
+          <p style="font-size: 0.84rem; line-height: 1.65; margin-bottom: 10px;">
+            Lot 6/7, 2nd Floor, Donggongon Point,<br>
+            89500 Penampang, Sabah, Malaysia.
+          </p>
+          <p style="font-size: 0.84rem;">
+            <strong>Email:</strong> admin@oongisvocemusic.com
+          </p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap; gap: 10px;">
+        <div>Copyright &copy; 2026 Oongisvoce Academy of Music. All Rights Reserved.</div>
+        <div style="cursor: pointer;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top ↑</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PROGRAM SYLLABUS MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="programModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <div style="margin-bottom: 16px;">
+        <span class="section-tag" id="modalTag">Syllabus Overview</span>
+        <h3 id="modalTitle" style="font-size: 1.4rem; color: #fff;">Program Title</h3>
+      </div>
+      <div class="modal-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; padding: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-sm); font-size: 0.8rem;">
+          <div><strong style="color: var(--gold-champagne);">Duration:</strong> <span id="modalDuration">13 Weeks</span></div>
+          <div><strong style="color: var(--gold-champagne);">Director:</strong> <span id="modalInstructor">Carrey Oliver</span></div>
+          <div><strong style="color: var(--gold-champagne);">Mode:</strong> <span id="modalMode">In-Person & Hybrid</span></div>
+          <div><strong style="color: var(--gold-champagne);">Certification:</strong> <span id="modalCredentials">SCSM Australia</span></div>
+        </div>
+
+        <h4 style="color: var(--gold-light); font-size: 0.95rem; margin-bottom: 6px;">Program Overview</h4>
+        <p id="modalDesc" style="font-size: 0.86rem; line-height: 1.65;"></p>
+
+        <h4 style="color: var(--gold-light); font-size: 0.95rem; margin-bottom: 6px;">Curriculum & Core Modules</h4>
+        <ul id="modalCurriculumList" style="margin: 8px 0 16px 20px; font-size: 0.85rem; color: var(--text-secondary);"></ul>
+
+        <h4 style="color: var(--gold-light); font-size: 0.95rem; margin-bottom: 6px;">Target Learner</h4>
+        <p id="modalSuitableFor" style="font-size: 0.86rem; line-height: 1.65;"></p>
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 14px;">
+        <button class="btn btn-outline-gold btn-sm" id="modalDismissBtn">Close</button>
+        <button class="btn btn-gold btn-sm" id="modalEnrollBtn">Enroll in this Program →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Drawer Navigation
+      const mobileToggle = document.getElementById('mobileToggle');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const drawerBackdrop = document.getElementById('drawerBackdrop');
+      const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+
+      function openDrawer() {
+        mobileDrawer.classList.add('open');
+        drawerBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDrawer() {
+        mobileDrawer.classList.remove('open');
+        drawerBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+      if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
+      if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', closeDrawer);
+      });
+
+      // Header Scroll
+      const header = document.querySelector('.site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      });
+
+      // 2. Program Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const programCards = document.querySelectorAll('.program-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-filter');
+
+          programCards.forEach(card => {
+            const cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. YouTube Showcase Video Player Switcher
+      const youtubePlayer = document.getElementById('youtubePlayer');
+      const currentVideoTitle = document.getElementById('currentVideoTitle');
+      const watchOnYoutubeBtn = document.getElementById('watchOnYoutubeBtn');
+      const ytPlaylistItems = document.querySelectorAll('.yt-playlist-item');
+
+      ytPlaylistItems.forEach(item => {
+        item.addEventListener('click', () => {
+          ytPlaylistItems.forEach(i => i.classList.remove('active'));
+          item.classList.add('active');
+
+          const videoId = item.getAttribute('data-videoid');
+          const title = item.getAttribute('data-title');
+
+          youtubePlayer.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+          currentVideoTitle.textContent = title;
+          watchOnYoutubeBtn.href = `https://www.youtube.com/watch?v=${videoId}`;
+        });
+      });
+
+      // 4. Program Modals
+      const programData = {
+        'ovec': {
+          title: 'The OV Essential Choral (OVEC) Program',
+          tag: 'Flagship 13-Week Choral Mastery',
+          duration: '13 Weeks (Comprehensive Track)',
+          instructor: 'Carrey Oliver, FSCSM',
+          mode: 'Studio Ensemble Rehearsals + Blended Clinics',
+          credentials: 'Oongisvoce + SCSM Recital Award Eligibility',
+          desc: 'Designed by Artistic Director Carrey Oliver, the OVEC Program is Sabah’s landmark choral acceleration course. It equips choristers, conductors, and vocalists with classical vocal acoustics, polyphonic balance, and stage poise.',
+          curriculum: [
+            'Choral Vocal Mechanics — Diaphragmatic Breath & Appoggio',
+            'International Phonetic Diction (IPA) & Vowel Tuning',
+            'Sight-Singing, Solfège Fluency & Harmonic Ear Diagnostics',
+            'Ensemble Dynamic Blending & Voice Balance',
+            'Concert Presentation & SCSM Recital Demonstration'
+          ],
+          suitableFor: 'Choristers, choral directors, music educators, and singers aged 15–50.'
+        },
+        'scsm-graded': {
+          title: 'SCSM Graded Examinations (Grades 1–8)',
+          tag: 'Australian Board Certification',
+          duration: 'Progressive Yearly / Semi-Annual Tracks',
+          instructor: 'SCSM Accredited Teaching Consultants',
+          mode: '1-on-1 Studio Mentorship + Mock Examination Benchmarks',
+          credentials: 'St. Cecilia School of Music (Australia) Certificate',
+          desc: 'Official examination partner in Sabah for SCSM International. We have guided over 1,200 learners through graded examinations with a 100% pass rate since 2014.',
+          curriculum: [
+            'Four Contrasting Performance Repertoire Pieces',
+            'Technical Work: Scales, Arpeggios & Vocalise',
+            'Aural Pitch Diagnostics & Rhythmic Memory',
+            'Sight-Reading & Music Literacy Mastery',
+            'Viva Voce (Musical Knowledge & Score Analysis)'
+          ],
+          suitableFor: 'Students of Vocal, Piano, Guitar, Violin, and Music Theory seeking accredited international credentials.'
+        },
+        'scsm-diploma': {
+          title: 'SCSM Professional Performance Diplomas',
+          tag: 'Tertiary Recital & Teaching Qualifications',
+          duration: '1 to 2 Years Intensive Preparation',
+          instructor: 'Carrey Oliver, FSCSM, FASMC',
+          mode: 'Advanced Private Masterclasses & Recital Adjudications',
+          credentials: 'Associate (DipSCSM), Licentiate (LSCSM), and Fellowship (FSCSM)',
+          desc: 'Our high-echelon diploma track prepares advanced vocalists and musicians for professional concert recitals, studio pedagogy, and music fellowship credentials.',
+          curriculum: [
+            'Full 45 to 60-Minute Thematic Recital Programme',
+            'Bel Canto, Classical Art Songs & Operatic Aria Repertoire',
+            'Written Programme Notes & Historical Repertoire Thesis',
+            'Performance Stagecraft & Recital Adjudication Readiness'
+          ],
+          suitableFor: 'Advanced vocalists, piano candidates, ensemble conductors holding Grade 8 or equivalent.'
+        },
+        'taksir-vokal': {
+          title: 'Program TAKSIR / Persijilan Tokoh Vokal',
+          tag: 'Standardized Vocal Assessment Framework',
+          duration: '6 to 8 Weeks Certification Workshops',
+          instructor: 'Oongisvoce Vocal Consultants & Adjudication Faculty',
+          mode: 'Workshop Series & Performance Diagnostic Trials',
+          credentials: 'Oongisvoce TAKSIR Vokal Adjudicator / Singer Certification',
+          desc: 'A standardized framework engineered to benchmark vocal health, pitch accuracy, register balance, and phrasing for vocal competition contestants and industry judges.',
+          curriculum: [
+            'Vocal Diagnostics & Passaggio Transition Health',
+            'Pitch Intonation & Microtonal Correction Techniques',
+            'Diction & Emotional Phrasing in Sabahan and Global Music',
+            'Adjudicator Scoring Matrix Calibration'
+          ],
+          suitableFor: 'Singers, competition contestants, choir leaders, and singing adjudicators.'
+        },
+        'ov-singers': {
+          title: 'The OV Singers Ensemble & Performance Choir',
+          tag: 'Premier Community Performing Choir',
+          duration: 'Ongoing Seasonal Concert Rehearsals',
+          instructor: 'Carrey Oliver (Founder & Principal Conductor)',
+          mode: 'Weekly Studio Rehearsals & Festival Tours',
+          credentials: 'The OV Singers Official Ensemble Member',
+          desc: 'Founded in 2015 by Carrey Oliver, The OV Singers is Sabah’s landmark community choir uniting passionate voices aged 15 to 50 for state, national, and international performances.',
+          curriculum: [
+            'Multi-Part Choral Harmony (Soprano, Alto, Tenor, Bass)',
+            'Traditional Sabahan & Indigenous Choral Arrangements',
+            'Sacred Renaissance, Classical & Contemporary Literature',
+            'Concert Stagecraft & Studio Recording'
+          ],
+          suitableFor: 'Singers aged 15–50 with a love for ensemble polyphony and cultural choral expression.'
+        },
+        'private-vocal': {
+          title: 'Private Vocal Artistry Masterclass',
+          tag: 'Personalized 1-on-1 Voice Training',
+          duration: 'Flexible Monthly Enrollment (Weekly 45 / 60 Min)',
+          instructor: 'Carrey Oliver & Senior Vocal Consultants',
+          mode: 'In-Studio (Penampang) or Interactive Online',
+          credentials: 'Academy Progress Report & Examination Pathway',
+          desc: 'Individualized vocal diagnostics to develop natural resonance, expand vocal range, smooth register breaks, and build lasting vocal health.',
+          curriculum: [
+            'Voice Anatomy & Breath Coordination',
+            'Range Extension & Mixed Voice Integration',
+            'Resonance Placement & Pharyngeal Tone',
+            'Audition, Competition & Recital Preparation'
+          ],
+          suitableFor: 'Beginners to seasoned vocalists aiming for rapid growth or audition preparation.'
+        }
+      };
+
+      const programModal = document.getElementById('programModal');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const modalDismissBtn = document.getElementById('modalDismissBtn');
+      const modalEnrollBtn = document.getElementById('modalEnrollBtn');
+
+      function openModal(key) {
+        const item = programData[key];
+        if (!item) return;
+
+        document.getElementById('modalTitle').textContent = item.title;
+        document.getElementById('modalTag').textContent = item.tag;
+        document.getElementById('modalDuration').textContent = item.duration;
+        document.getElementById('modalInstructor').textContent = item.instructor;
+        document.getElementById('modalMode').textContent = item.mode;
+        document.getElementById('modalCredentials').textContent = item.credentials;
+        document.getElementById('modalDesc').textContent = item.desc;
+        document.getElementById('modalSuitableFor').textContent = item.suitableFor;
+
+        const list = document.getElementById('modalCurriculumList');
+        list.innerHTML = '';
+        item.curriculum.forEach(c => {
+          const li = document.createElement('li');
+          li.textContent = c;
+          list.appendChild(li);
+        });
+
+        modalEnrollBtn.onclick = () => {
+          closeModal();
+          window.location.hash = '#contact';
+        };
+
+        programModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        programModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.open-program-modal').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal(btn.getAttribute('data-program'));
+        });
+      });
+
+      if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+      if (modalDismissBtn) modalDismissBtn.addEventListener('click', closeModal);
+      if (programModal) {
+        programModal.addEventListener('click', (e) => {
+          if (e.target === programModal) closeModal();
+        });
+      }
+
+      // 5. Contact Form WhatsApp Instant Redirection
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('contactName').value.trim();
+          const phone = document.getElementById('contactPhone').value.trim();
+          const email = document.getElementById('contactEmail').value.trim();
+          const program = document.getElementById('contactProgram').value;
+          const msg = document.getElementById('contactMessage').value.trim();
+
+          const text = encodeURIComponent(
+            `Hello Oongisvoce Academy,\n\n` +
+            `I would like to inquire about enrollment:\n` +
+            `• Name: ${name}\n` +
+            `• Phone: ${phone}\n` +
+            `• Email: ${email}\n` +
+            `• Program: ${program}\n` +
+            (msg ? `• Message: ${msg}\n` : '')
+          );
+
+          // Redirect to WhatsApp directly
+          window.open(`https://wa.me/60168388726?text=${text}`, '_blank');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
